@@ -89,7 +89,7 @@ class Main extends PluginBase implements Listener{
 				while($player->isOnline() && $this->getServer()->isRunning()){
 					$this->checkVote($player, false);
 
-					yield $this->std->sleep(20 * 30);
+					yield from $this->std->sleep(20 * 30);
 				}
 			});
 		}
